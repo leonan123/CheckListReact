@@ -18,7 +18,6 @@ function App() {
   };
 
   const handleSaveData = ({ id, value, isCompleted }) => {
-    console.log(value);
     const newData = data.map((task) => {
       if (task.id === id) {
         task.value = value?.length ? value : task.value;
